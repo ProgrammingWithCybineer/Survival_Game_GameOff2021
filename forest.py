@@ -53,7 +53,8 @@ def game_start_1_function():
     user_decision_1 = Entry(top, width=50,borderwidth=10, bg="#212121", fg="azure", font="ComicMS", justify="center")
     user_decision_1.pack()
     global decision_1_submit_button
-    decision_1_submit_button = Button(top, text="Submit", command=game_start_2_function)
+    global finishButton_1
+    decision_1_submit_button = Button(top, text="Submit", bg="#228B22",  fg="azure", command=game_start_2_function)
     decision_1_submit_button.pack()
     play_game_button.forget()
     finishButton_2.forget()
@@ -61,7 +62,7 @@ def game_start_1_function():
     finishButton_1.pack()
 
 
-play_game_button = Button(top, text="Click To Enter The Forest", command=game_start_1_function)
+play_game_button = Button(top, text="Click To Enter The Forest", bg="#228B22", fg="azure", command=game_start_1_function)
 play_game_button.pack()
 finishButton_2 = Button(top, text="Click Here To QUIT Your Journey", command=top.quit, bg="#8B1A1A", fg="azure")
 finishButton_2.pack()
@@ -84,15 +85,17 @@ def game_start_2_function():
         global user_decision_1_2
         global user_decision_1_1_submit
         global decision_1_submit_button 
-        global user_decision_1_1_button       
-        user_decision_1_2 = Entry(top, width=50,borderwidth=10, bg="#212121", fg="azure")
+        global user_decision_1_1_button
+        global finishButton_3      
+        user_decision_1_2 = Entry(top, width=50,borderwidth=10, bg="#212121", fg="azure", font="ComicMS", justify="center")
         user_decision_1_2.pack()
-        user_decision_1_1_button = Button(top, text="Submit", command=game_start_4_function)
+        user_decision_1_1_button = Button(top, text="Submit", bg="#228B22",  fg="azure", command=game_start_4_function)
         user_decision_1_1_button.pack()
-        finishButton_2 = Button(top, text="Click Here To QUIT Your Journey", command=top.quit, bg="#8B1A1A", fg="azure")
-        finishButton_2.pack()
-        decision_1_submit_button['state'] = DISABLED #disables button once function runs
-        
+        finishButton_3 = Button(top, text="Click Here To QUIT Your Journey", command=top.quit, bg="#8B1A1A", fg="azure")
+        finishButton_3.pack()
+        #decision_1_submit_button['state'] = DISABLED #disables button once function runs
+        finishButton_1.forget()
+        decision_1_submit_button.forget()
 
         
 #### WORKING ON NIGHT STORY LNE #######
@@ -110,13 +113,15 @@ def game_start_2_function():
         game_line_6 = Label(top, font = ("Verdana", 11), text="Type 'Glow' or Type 'Waterfall' ")
         game_line_6.pack()
         global user_decision_2_1
-        user_decision_2_1 = Entry(top, width=50,borderwidth=10, bg="#212121", fg="azure")
+        global finishButton_2
+        user_decision_2_1 = Entry(top, width=50,borderwidth=10, bg="#212121", fg="azure", font="ComicMS", justify="center")
         user_decision_2_1.pack()
-        user_decision_1_1_button = Button(top, text="Submit", command=game_start_3_function)
+        user_decision_1_1_button = Button(top, text="Submit", bg="#228B22",  fg="azure", command=game_start_3_function)
         user_decision_1_1_button.pack()
         finishButton_2 = Button(top, text="Click Here To QUIT Your Journey", command=top.quit, bg="#8B1A1A", fg="azure")
         finishButton_2.pack()
-        decision_1_submit_button['state'] = DISABLED
+        finishButton_1.forget()
+        decision_1_submit_button.forget()
 
 
 def game_start_3_function():
@@ -139,6 +144,8 @@ def game_start_3_function():
         game_line_6_1.pack()
         game_over = Button(top, text="Game Over", command=top.quit,  bg="#8B1A1A", fg="azure")
         game_over.pack()
+        user_decision_1_1_button.forget()
+        finishButton_2.forget()
 
 
     
@@ -161,6 +168,8 @@ def game_start_3_function():
         game_line_6_2.pack()
         game_over = Button(top, text="Game Over", command=top.quit,  bg="#8B1A1A", fg="azure")
         game_over.pack()
+        user_decision_1_1_button.forget()
+        finishButton_2.forget()
 
 
 
@@ -187,14 +196,16 @@ def game_start_4_function():
         global user_decision_1_3
         global user_decision_1_1_button
         global user_decision_1_3_1_button
-        user_decision_1_3 = Entry(top, width=50,borderwidth=10, bg="#212121", fg="azure")
+        global finishButton_4
+        user_decision_1_3 = Entry(top, width=50,borderwidth=10, bg="#212121", fg="azure", font="ComicMS", justify="center")
         user_decision_1_3.pack()
-        user_decision_1_3_1_button = Button(top, text="Submit", command=game_start_6_function)
+        user_decision_1_3_1_button = Button(top, text="Submit", bg="#228B22",  fg="azure", command=game_start_6_function)
         user_decision_1_3_1_button.pack()
-        finishButton_2 = Button(top, text="Click Here To QUIT Your Journey", command=top.quit, bg="#8B1A1A", fg="azure")
-        finishButton_2.pack()
-        user_decision_1_1_button['state'] = DISABLED
-        
+        finishButton_4 = Button(top, text="Click Here To QUIT Your Journey", command=top.quit, bg="#8B1A1A", fg="azure")
+        finishButton_4.pack()
+        user_decision_1_1_button.forget()
+        finishButton_3.forget()
+ 
   
 
 
@@ -209,6 +220,8 @@ def game_start_4_function():
         game_line_5_1_1.pack()
         game_over = Button(top, text="Game Over", command=top.quit,  bg="#8B1A1A", fg="azure")
         game_over.pack()
+        user_decision_1_1_button.forget()
+        finishButton_3.forget()
 
 
 
@@ -240,7 +253,9 @@ def game_start_6_function():
         game_line_5_2.pack()
         game_over = Button(top, text="YOU WON....Game Over. Click To Quit", command=top.quit,  bg="#228B22", fg="azure")
         game_over.pack()
-        user_decision_1_3_1_button['state'] = DISABLED
+        user_decision_1_3_1_button.forget()
+        finishButton_4.forget()
+        
         
 
     elif user_decision_1_3.get().lower() == "lake":
@@ -266,6 +281,8 @@ def game_start_6_function():
         game_line_5_3.pack()
         game_over = Button(top, text="Game Over", command=top.quit,  bg="#8B1A1A", fg="azure")
         game_over.pack()
+        user_decision_1_3_1_button.forget()
+        finishButton_4.forget()
 
 
 

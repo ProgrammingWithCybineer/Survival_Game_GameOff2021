@@ -15,7 +15,7 @@ font_tuple = ("Comic Sans MS",18, "bold")
 #New Window in Tkinter
 top = Toplevel()
 top.title("Can You Survive In The City!!!")
-top.iconbitmap("C:\\Users\\Cybineer\\Desktop\\MyCode\\Text_Adventure_Game_GUI\\Survive.ico")
+top.iconbitmap("C:\\Users\\Cybineer\\Desktop\\MyCode\\Survival_Game_GameOff2021\\Survive.ico")
 top.geometry('1920x1080')
 
 

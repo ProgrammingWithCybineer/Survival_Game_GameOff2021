@@ -8,7 +8,7 @@ import sys
 
 root = Tk()
 root.title("Can You Survive")
-root.iconbitmap("C:\\Users\\Cybineer\\Desktop\\MyCode\\Text_Adventure_Game_GUI\\Survive.ico")
+root.iconbitmap("C:\\Users\\Cybineer\\Desktop\\MyCode\\Survival_Game_GameOff2021\\Survive.ico")
 root.geometry('1920x1080')
 
 

@@ -1,14 +1,13 @@
-from tkinter import *
-from PIL import ImageTk, Image
 import os
 import sys
+from pathlib import Path
+from tkinter import *
 
-
-
+from PIL import Image, ImageTk
 
 root = Tk()
 root.title("Can You Survive")
-root.iconbitmap("C:\\Users\\Cybineer\\Desktop\\MyCode\\Survival_Game_GameOff2021\\Survive.ico")
+root.iconbitmap('@' + str(Path(__file__).resolve().parent / 'Survive.xbm'))
 root.geometry('1920x1080')
 
 

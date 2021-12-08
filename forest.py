@@ -1,10 +1,10 @@
-from tkinter import *
-from PIL import ImageTk, Image
-from tkinter import messagebox
-from tkinter import ttk
 import os
 import sys
+from pathlib import Path
+from tkinter import *
+from tkinter import messagebox, ttk
 
+from PIL import Image, ImageTk
 
 global main_frame
 
@@ -15,7 +15,7 @@ font_tuple = ("Comic Sans MS",18, "bold")
 
 top = Toplevel()
 top.title("Can You Survive In The Forest!!!")
-top.iconbitmap("C:\\Users\\Cybineer\\Desktop\\MyCode\\Survival_Game_GameOff2021\\Survive.ico")
+top.iconbitmap('@' + str(Path(__file__).resolve().parent / 'Survive.xbm'))
 top.geometry('1920x1080')
 
 

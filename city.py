@@ -1,11 +1,10 @@
-from tkinter import *
-from PIL import ImageTk, Image
-from tkinter import messagebox
 import os
 import sys
+from pathlib import Path
+from tkinter import *
+from tkinter import messagebox
 
-
-
+from PIL import Image, ImageTk
 
 #name.pack()
 font_tuple = ("Comic Sans MS",18, "bold")
@@ -15,7 +14,7 @@ font_tuple = ("Comic Sans MS",18, "bold")
 #New Window in Tkinter
 top = Toplevel()
 top.title("Can You Survive In The City!!!")
-top.iconbitmap("C:\\Users\\Cybineer\\Desktop\\MyCode\\Survival_Game_GameOff2021\\Survive.ico")
+top.iconbitmap('@' + str(Path(__file__).resolve().parent / 'Survive.xbm'))
 top.geometry('1920x1080')
 
 

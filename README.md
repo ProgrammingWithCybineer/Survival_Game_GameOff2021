@@ -1,4 +1,5 @@
-# Decisions Of Survival Game Entry_GameOff2021
+# Decisions Of Survival Game 
+## Entry For Itch.io GameOff2021
 
 An entry for the Itch.io Game Off 2021 game jam. Game files available here:
 * https://itch.io/jam/game-off-2021/rate/1296302

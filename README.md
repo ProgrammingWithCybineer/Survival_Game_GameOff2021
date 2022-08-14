@@ -6,6 +6,10 @@ An entry for the Itch.io Game Off 2021 game jam. Game files available here:
 
 Survival Choice based game. Your decisions determine whether you survive or parish.
 
+### Modules Required
+ - tkinter
+ - pathlib
+ 
 ### Install instructions
 1. Download all files. Ensure all files downloaded are in the same directory. 
 
@@ -21,7 +25,7 @@ Good luck and I hope you can survive.
   *	Git + GitHub
   *	VS Code
 
-## Features:
+## Features
 ### Current Features
   *	GUI Interface
 

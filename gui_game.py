@@ -11,7 +11,6 @@ root.iconbitmap('@' + str(Path(__file__).resolve().parent / 'Survive.xbm'))
 root.geometry('1920x1080')
 
 
-
 # # Add image file
 bg = ImageTk.PhotoImage(file = "start4.jpg")
 
@@ -20,9 +19,7 @@ my_img =  ImageTk.PhotoImage(Image.open("start4.jpg"))
 my_label = Label(root, image=my_img)
 my_label.place(x=0,y=0, relwidth=1, relheight=1)
 
-
 global name
-
 
 def path():
     path_label = Label(root, text="Welcome To The World Of The Unknown, Where Would You Like To Start Your Journey? Choose your path city or forest", padx=20, pady=20, font=50, bg="#5C5C5C", fg="#F0FFFF")
@@ -38,8 +35,6 @@ def path():
     finishButton.pack()
     name_submit_button.pack_forget()
     finishButton_1.pack_forget()
-
-
 
 def game_start_0_function():
     world = str(world2.get().lower())

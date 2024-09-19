@@ -63,7 +63,6 @@ finishButton_2 = Button(top, text="Click Here To QUIT Your Journey", command=top
 finishButton_2.pack()
 
 
-# WORKING ON CHANGING FONT SIZE OF LABELS TO MAKE IT EASIER FOR PEOPLE TO SEE AND PLAY #####
 def game_start_2_function():
     if user_decision_1.get().lower()  == "alley":
         game_line_4 = Label(top, font = ("Verdana", 11), text="As you head down the dark alley the light you saw quickly gets further and further away and you then notice 2 doors")

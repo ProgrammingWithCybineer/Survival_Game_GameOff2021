@@ -1,3 +1,7 @@
+'''
+need to have root window disappear after choice is made
+'''
+
 import os
 import sys
 from pathlib import Path
@@ -8,7 +12,7 @@ from PIL import Image, ImageTk
 root = Tk()
 root.title("Can You Survive")
 root.iconbitmap('@' + str(Path(__file__).resolve().parent / 'Survive.xbm'))
-root.geometry('1920x1080')
+root.geometry('1200x800')
 
 
 # # Add image file

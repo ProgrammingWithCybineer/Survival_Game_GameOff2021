@@ -16,7 +16,7 @@ font_tuple = ("Comic Sans MS",18, "bold")
 top = Toplevel()
 top.title("Can You Survive In The Forest!!!")
 top.iconbitmap('@' + str(Path(__file__).resolve().parent / 'Survive.xbm'))
-top.geometry('1920x1080')
+top.geometry('1200x800')
 
 
 my_img =  ImageTk.PhotoImage(Image.open("forest2.jpg"))
